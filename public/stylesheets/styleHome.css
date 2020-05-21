@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+  radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+div {
+  font-size: 45px;
+}
+
+a {
+  color: fushia;
+  font-size: 20px;
+}
+
+a:visited {
+  color: white;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+img {
+  height: 250px;
+  border-radius: 50%;
+  border: solid 4px #e66465;
+}

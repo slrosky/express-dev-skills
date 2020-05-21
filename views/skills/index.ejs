@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Skills</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/styleSkillPage.css' />
+    <title>My Developer Skills</title>
 </head>
 <body>
+  <a href="/">Home</a>
     <h1>Skills</h1>
+    <div>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
+          <form action="/skills/<%= s.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button style="inline" type="submit">X</button>
+          </form>
             <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-            <%= s.skill %>
             - 
             <%= s.level %>
         </li>
       <% }); %>
     </ul>
+    <a href="/skills/new">Add a new skill</a>
+  </div>
 </body>
 </html>
